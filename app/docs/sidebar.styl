@@ -13,11 +13,16 @@
 // Non-mobile screens
 @media (min-width: 769px)
   .side-nav
-    top: $navbar-height;
-    bottom:0;
-    position:fixed;
-    overflow-y:scroll;
-    overflow-x:hidden;
+    top: $navbar-height
+    bottom:20px    
+    
+    #sidebar
+     position: fixed
+     padding: 50px
+
+    > ul
+     overflow-y: auto
+     height: 100%        
 
 .side-nav
   background-color: $sidebar-color
@@ -26,6 +31,7 @@
   ul
     list-style: none
     padding: 0
+    margin-bottom: 20px
 
     li
       padding-bottom: 4px  
